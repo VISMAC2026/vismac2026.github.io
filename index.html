@@ -14,30 +14,30 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">VISMAC 2026</div>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">VISMAC 2026</div>
 
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    
-
-
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#organizers">Organizers</a></li>
-        <li><a href="#registration">Registration</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#poster">Poster</a></li>
-        <li><a href="#venue">Venue</a></li>
-      
-      </ul>
+    <!-- Hamburger menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
+
+    <!-- Link della navbar -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#registration">Registration</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#poster">Poster</a></li>
+      <li><a href="#venue">Venue</a></li>
+    </ul>
+  </div>
+</nav>
+
   
 
   <!-- Hero 
@@ -184,5 +184,14 @@
     <p>© 2026 VISMAC • Tutti i diritti riservati</p>
   </footer>
 
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
