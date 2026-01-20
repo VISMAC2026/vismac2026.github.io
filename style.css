@@ -283,63 +283,89 @@
     margin-bottom: 1rem;
   }
 
-  /* ===== Venue Section ===== */
+ /* ===== Venue Section ===== */
 .venue-section {
-    margin: 4rem 0;
-  }
-  
-  .venue-banner {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-  }
-  
-  .venue-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    filter: brightness(0.7);
-  }
-  
+  margin: 4rem 0;
+}
+
+.venue-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.venue-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+/* Testo centrato */
+.venue-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 1rem 2rem;
+  max-width: 800px;
+  width: 90%; /* aggiunto per adattarsi a schermi piccoli */
+  box-sizing: border-box; /* include padding nella larghezza */
+}
+
+.venue-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.venue-text p {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  word-wrap: break-word; /* forza il testo a spezzarsi se troppo lungo */
+}
+
+.venue-btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #4dc0ff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-top: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.venue-btn:hover {
+  background: #3598db;
+  color: #fff;
+}
+
+/* ===== Media query per dispositivi mobili ===== */
+@media (max-width: 768px) {
   .venue-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    padding: 1rem 2rem;
-    max-width: 800px;
+    padding: 0.5rem 1rem; /* meno padding su mobile */
+    max-width: 95%; /* più spazio disponibile */
   }
-  
+
   .venue-text h2 {
-    font-size: 2.4rem;
-    margin-bottom: 0.6rem;
-    font-weight: 700;
+    font-size: 1.8rem; /* ridotto per smartphone */
   }
-  
+
   .venue-text p {
-    font-size: 1.1rem;
-    margin-bottom: 0.6rem;
+    font-size: 1rem; /* leggermente più piccolo */
   }
-  
+
   .venue-btn {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    background: #4dc0ff;
-    color: #111;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 50px;
-    margin-top: 0.8rem;
-    transition: 0.3s ease;
+    padding: 0.6rem 1.2rem; /* bottone più piccolo su mobile */
+    font-size: 0.95rem;
   }
-  
-  .venue-btn:hover {
-    background: #3598db;
-    color: #fff;
-  }
+}
+
 
   .highlight-red {
     color: red;
