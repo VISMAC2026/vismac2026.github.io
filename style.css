@@ -35,7 +35,7 @@
     font-weight: 600;
   }
   
-  /* === Hero === */
+  /* === Hero === 
   .hero {
     background: url('https://source.unsplash.com/1600x800/?technology,ai') center/cover no-repeat;
     color: #1f2a63;
@@ -60,7 +60,93 @@
   .btn.outline {
     background: transparent; border: 2px solid var(--accent);
     color: var(--text-dark);
+  }*/
+
+  /* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    height: 90vh;
+    background-image: url("assets/images/duomo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
   }
+  
+  /* Overlay scuro elegante */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 15, 40, 0.75),
+      rgba(10, 15, 40, 0.45)
+    );
+    z-index: 1;
+  }
+  
+  /* Contenuto */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  /* Bottone */
+  .hero-btn {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    border-radius: 50px;
+    background: #4dc0ff;
+    color: #0b0f34;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background: #ffffff;
+    color: #0b0f34;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      height: 75vh;
+      background-attachment: scroll;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
   
   /* === Sections === */
   .section { padding: 3rem 0; }
@@ -98,4 +184,77 @@
     padding: 1rem;
     font-size: 0.9rem;
   }
+  
+  .speaker-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  /* ===== Venue Section ===== */
+.venue-section {
+    margin: 4rem 0;
+  }
+  
+  .venue-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .venue-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+  
+  .venue-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 1rem 2rem;
+    max-width: 800px;
+  }
+  
+  .venue-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+  }
+  
+  .venue-text p {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .venue-btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background: #4dc0ff;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 0.8rem;
+    transition: 0.3s ease;
+  }
+  
+  .venue-btn:hover {
+    background: #3598db;
+    color: #fff;
+  }
+
+  .highlight-red {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
   
