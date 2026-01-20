@@ -38,7 +38,7 @@
   /* === Hero === */
   .hero {
     background: url('https://source.unsplash.com/1600x800/?technology,ai') center/cover no-repeat;
-    color: white;
+    color: #1f2a63;
     height: 70vh;
     display: flex;
     align-items: center;
