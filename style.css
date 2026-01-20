@@ -21,6 +21,10 @@
     width: 90%; max-width: 1200px; margin: auto;
   }
   
+  
+  
+  
+  
   /* === Navbar === */
   .navbar {
     background: var(--primary);
@@ -78,6 +82,11 @@
     overflow: hidden;
   }
   
+  .hero-logo {
+    width: 280px;
+    margin-bottom: 0.8rem;
+  }
+
   /* Overlay scuro elegante */
   .hero-overlay {
     position: absolute;
@@ -96,6 +105,8 @@
     z-index: 2;
     max-width: 900px;
     padding: 2rem;
+
+  
   }
   
   .hero-content h1 {
@@ -109,6 +120,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 2rem;
+    margin-top: 0.1rem;
     opacity: 0.9;
   }
   
@@ -144,6 +156,7 @@
   
     .hero-content p {
       font-size: 1.1rem;
+      
     }
   }
   
