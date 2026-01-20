@@ -3,91 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VISMAC 2026</title>
+  <title>AI Summer School 2026</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Stile -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <header class="hero" id="home">
-    <nav class="navbar">
-      <div class="logo">VISMAC 2026</div>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">AI Summer School 2026</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#about">Dates</a></li>
-        <li><a href="#program">Program</a></li>
         <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#apply">Venue</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#poster">Poster</a></li>
+        <li><a href="#venue">Venue</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="hero-content">
-      <h1>VISMAC 2026</h1>
-      <p>International Summer School on Machine Vision</p>
-      <p>Siena, Italy - TBA</p>
-      <a href="#apply" class="btn">Apply now</a>
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-content container">
+      <h1>International Summer School on Artificial Intelligence</h1>
+      <p>Formazione avanzata per dottorandi e ricercatori. Unisciti a esperti internazionali!</p>
+      <a href="#registration" class="btn">Iscriviti Ora</a>
     </div>
   </header>
 
   <!-- About -->
-  <section id="about" class="section">
-    <h2>What We Offer</h2>
-    <p>Una full-immersion tra teoria, laboratori e workshop con esperti internazionali.</p>
-  </section>
-
-  <!-- Program -->
-  <section id="program" class="section light">
-    <h2>Programma</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Machine Learning</h3>
-        <p>Deep learning, modelli probabilistici, generalizzazione.</p>
-      </div>
-      <div class="card">
-        <h3>AI Generativa</h3>
-        <p>Large language models, modelli generativi e applicazioni.</p>
-      </div>
-      <div class="card">
-        <h3>Etica e AI</h3>
-        <p>Fairness, interpretabilità e regolazioni etiche.</p>
-      </div>
-    </div>
+  <section id="about" class="section container">
+    <h2>About</h2>
+    <p>La summer school offre una full immersion tra teoria, laboratori e workshop con esperti internazionali.</p>
   </section>
 
   <!-- Speakers -->
-  <section id="speakers" class="section">
-    <h2>Docenti e Relatori</h2>
+  <section id="speakers" class="section container">
+    <h2>Speakers</h2>
     <div class="cards">
-      <div class="card">
-        <h3>Prof.ssa Maria Rossi</h3>
-        <p>Università di Esempio</p>
+      <div class="card"><h3>Prof. Maria Rossi</h3><p>Università di Esempio</p></div>
+      <div class="card"><h3>Dr. Luca Bianchi</h3><p>Istituto AI</p></div>
+      <div class="card"><h3>Prof. John Doe</h3><p>Visiting Scientist</p></div>
+    </div>
+  </section>
+
+  <!-- Organizers -->
+  <section id="organizers" class="section container light">
+    <h2>Organizers</h2>
+    <div class="cards">
+      <div class="card"><h3>Prof. Anna Verdi</h3><p>University Chair</p></div>
+      <div class="card"><h3>Dr. Pietro Neri</h3><p>Local Chair</p></div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section id="registration" class="section container">
+    <h2>Registration & Pricing</h2>
+    <div class="cards">
+      <div class="card price-card">
+        <h3>Early Bird</h3><p>€400 • until May 31</p>
       </div>
-      <div class="card">
-        <h3>Dr. Luca Bianchi</h3>
-        <p>Centro di Ricerca AI</p>
+      <div class="card price-card">
+        <h3>Regular</h3><p>€500 • until July 15</p>
       </div>
-      <div class="card">
-        <h3>Prof. John Doe</h3>
-        <p>Visiting Scientist</p>
+      <div class="card price-card">
+        <h3>Virtual</h3><p>€200 • online access</p>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section id="apply" class="section dark">
-    <h2>Partecipa alla Summer School</h2>
-    <p>Iscrizioni aperte fino al 30 maggio — Posti limitati!</p>
-    <a href="#" class="btn inverse">Compila il Modulo</a>
+  <!-- Schedule -->
+  <section id="schedule" class="section container light">
+    <h2>Schedule Overview</h2>
+    <div class="schedule-list">
+      <div class="schedule-day"><strong>Day 1</strong> Opening, Lectures & Workshops</div>
+      <div class="schedule-day"><strong>Day 2</strong> Tutorials & Poster Session</div>
+      <div class="schedule-day"><strong>Day 3</strong> Closing & Awards</div>
+    </div>
+  </section>
+
+  <!-- Poster Session -->
+  <section id="poster" class="section container">
+    <h2>Poster Session</h2>
+    <p>Invitiamo studenti a presentare le loro ricerche. Submission deadline: 30 August.</p>
+    <a href="#" class="btn outline">Apply Now</a>
+  </section>
+
+  <!-- Venue -->
+  <section id="venue" class="section container light">
+    <h2>Venue</h2>
+    <p>Dipartimento di Informatica • Padova, Italy</p>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 AI Summer School • Università / Organizzazione</p>
+    <p>© 2026 AI Summer School • Tutti i diritti riservati</p>
   </footer>
 
 </body>
