@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VISMAC 2026 • Sponsor</title>
+  <title>VISMAC 2026 • Sponsors</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main CSS (corretto per cartella /sponsor/) -->
+  <!-- Main CSS (correct path from /sponsor/) -->
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <!-- Navbar identica all’index -->
+  <!-- Navbar (same as homepage) -->
   <nav class="navbar">
     <div class="container">
       <div class="logo">VISMAC 2026</div>
@@ -26,70 +26,75 @@
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../index.html#speakers">Speakers</a></li>
         <li><a href="../index.html#organizers">Organizers</a></li>
-        <li><a href="../index.htmlef="../index.html#poster">Poster</a></li>
+        <li><a href="../index.html#registrationhtml#poster">Poster</a></li>
         <li><a href="../index.html#venue">Venue</a></li>
-        <li><a href="index.html">Sponsor</a></li>
-        <li><a href="sponsor-en.html">EN</a></li>
+        <li><a href="index.html">IT</a></li>
+        <li><a href="sponsor-en.html">Sponsor</a></li>
       </ul>
     </div>
   </nav>
 
-
-  <!-- Sezione Intro -->
+  <!-- Intro -->
   <header class="section container">
-    <h2>Diventa Sponsor</h2>
+    <h2>Sponsorship Opportunities</h2>
     <p>
-      Supportare <strong>VISMAC 2026</strong> significa contribuire alla crescita della comunità italiana 
-      nei settori Computer Vision, Mixed Reality e Cognitive Robotics.
+      Supporting <strong>VISMAC 2026</strong> means contributing to the growth of the international community
+      in Computer Vision, Mixed Reality, and Cognitive Robotics.
     </p>
   </header>
 
-
-  <!-- Piani di Sponsorizzazione -->
+  <!-- Sponsorship Tiers -->
   <section class="section container light">
-    <h2>Piani di Sponsorship</h2>
+    <h2>Sponsorship Tiers</h2>
 
     <div class="cards">
 
       <div class="card price-card">
         <h3>Bronze</h3>
-        <p><strong>120€</strong></p>
-        <p>• Nome / logo sul sito<br>
-        • Ringraziamenti ufficiali</p>
+        <p><strong>€120</strong></p>
+        <p>
+          • Name / logo displayed on the website<br>
+          • Official acknowledgements during the event
+        </p>
       </div>
 
       <div class="card price-card">
         <h3>Silver</h3>
-        <p><strong>350€</strong></p>
-        <p>• Demo space<br>
-        • Presentazione aziendale<br>
-        • 1 Day Pass</p>
+        <p><strong>€350</strong></p>
+        <p>
+          • Demo space<br>
+          • Company presentation<br>
+          • 1 Day Pass
+        </p>
       </div>
 
       <div class="card price-card">
         <h3>Gold</h3>
-        <p><strong>700€</strong></p>
-        <p>• Demo space<br>
-        • Presentazione aziendale<br>
-        • Full Pass</p>
+        <p><strong>€700</strong></p>
+        <p>
+          • Demo space<br>
+          • Company presentation<br>
+          • Full Pass
+        </p>
       </div>
 
     </div>
 
     <br><br>
-    <a class="hero-btn" href="mailto:vismac2026@gmail.com">Diventa Sponsor</a>
+    <div style="text-align:center;">
+      <a href="mailto:vismac2026@gmail.com" class="hero-btn">Become a Sponsor</a>
+    </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 VISMAC • Tutti i diritti riservati</p>
+    <p>© 2026 VISMAC • All rights reserved</p>
   </footer>
-
 
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
+
     mobileMenu.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
