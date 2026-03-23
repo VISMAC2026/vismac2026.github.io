@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VISMAC 2026 • Sponsors</title>
+  https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap
+  ../style.css
+  <style>
+    .sponsor-hero {
+      background: linear-gradient(180deg, rgba(31,42,99,0.10), rgba(31,42,99,0.06));
+      padding: 3rem 0 1rem;
+      text-align: center;
+    }
+    .sponsor-hero h1 { color: var(--primary); font-weight: 700; margin-bottom: 0.6rem; }
+    .sponsor-hero p { opacity: 0.9; max-width: 900px; margin: 0.2rem auto 0; }
+    .tier-name { font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
+    .tier-price { font-weight: 700; color: #0b0f34; margin-bottom: 0.5rem; }
+    .tier-benefits { text-align: left; line-height: 1.5; margin-top: 0.6rem; font-size: 0.98rem; }
+    .cta-wrap { text-align: center; margin-top: 2rem; }
+    .cta-btn {
+      display: inline-block; padding: 0.8rem 1.6rem; border-radius: 50px;
+      background: var(--accent); color: var(--text-dark); font-weight: 700;
+      text-decoration: none; transition: 0.3s ease;
+    }
+    .cta-btn:hover { background: #3598db; color: #fff; transform: translateY(-1px); }
+    .logos-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem;
+      align-items: center; justify-items: center;
+    }
+    .logos-grid img { max-width: 140px; width: 100%; height: auto; filter: grayscale(0.1); opacity: 0.95; }
+    @media (max-width: 900px) { .logos-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">VISMAC 2026</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li>../index.html#aboutAbout</a></li>
+        <li>../index.html#speakersSpeakers</a></li>
+        <li>../index.html#organizersOrganizers</a></li>
+        <li>../index.html#registrationRegistration</a></li>
+        <li>../index.html#scheduleSchedule</a></li>
+        <li>../index.html#posterPoster</a></li>
+        <li>../index.html#venueVenue</a></li>
+        <li>../sponsor.htmlSponsor</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <header class="sponsor-hero">
+    <div class="container">
+      <h1>Sponsorship Opportunities</h1>
+      <p>Supporting <strong>VISMAC 2026</strong> means contributing to the growth of the Italian community in <em>Computer Vision, Mixed Reality, and Cognitive Robotics</em>. We offer three sponsorship tiers with strong visibility, on-site presence, and networking opportunities.</p>
+    </div>
+  </header>
+
+  <!-- Tiers -->
+  <section class="section container light">
+    <h2>Sponsorship Tiers</h2>
+    <div class="cards">
+      <!-- Bronze -->
+      <div class="card price-card">
+        <div class="tier-name">Bronze</div>
+        <div class="tier-price">€120</div>
+        <div class="tier-benefits">
+          • Name / logo on the website<br>
+          • Official acknowledgements during the event
+        </div>
+      </div>
+
+      <!-- Silver -->
+      <div class="card price-card">
+        <div class="tier-name">Silver</div>
+        <div class="tier-price">€350</div>
+        <div class="tier-benefits">
+          • Demo space<br>
+          • Company presentation<br>
+          • 1 Day Pass
+        </div>
+      </div>
+
+      <!-- Gold -->
+      <div class="card price-card">
+        <div class="tier-name">Gold</div>
+        <div class="tier-price">€700</div>
+        <div class="tier-benefits">
+          • Demo space<br>
+          • Company presentation<br>
+          • Full Pass
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-wrap">
+      mailto:vismac2026@gmail.comBecome a Sponsor</a>
+    </div>
+  </section>
+
+  <!-- (Optional) Current sponsors -->
+  <section class="section container">
+    <h2>Our Sponsors</h2>
+    <p style="margin-bottom:1rem;">We will display sponsor logos here once confirmed.</p>
+    <div class="logos-grid">
+      <!-- ../assets/logos/partner1.png -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 VISMAC • All rights reserved</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    mobileMenu.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+  </script>
+</body>
+</html>
