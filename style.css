@@ -265,6 +265,13 @@
     background: #fff; padding: 1rem; border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   }
+
+    /* === Topics === */
+  .topic-list { display: grid; gap: 0.8rem; }
+  .topic-item {
+    background: #fff; padding: 1rem; border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
   
   /* === Footer === */
   .footer {
