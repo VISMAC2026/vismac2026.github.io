@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call for Posters - VISMAC 2026</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">VISMAC 2026</a></div>
+
+    <!-- Hamburger menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Link della navbar (Aggiornati per puntare alla index) -->
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#speakers">Speakers</a></li>
+      <li><a href="index.html#organizers">Organizers</a></li>
+      <li><a href="index.html#registration">Registration</a></li>
+      <li><a href="index.html#schedule">Schedule</a></li>
+      <li><a href="poster.html">Poster</a></li>
+      <li><a href="index.html#venue">Venue</a></li>
+      <li><a href="sponsor.html">Sponsors</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Sezione Introduttiva (Semplificata per la pagina interna) -->
+  <header class="hero" style="min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" style="position: relative; z-index: 1;">
+        <h1 style="color: white; font-size: 3rem; margin-bottom: 10px;">Call for Posters</h1>
+        <p>VISMAC 2026 - International Summer School on Machine Vision</p>
+        <p>Siena, Italy - 21-25 September 2026</p>
+    </div>
+  </header>
+
+  <!-- Contenuto della Call for Posters -->
+  <section id="call-for-posters" class="section container">
+    
+    <h2>Call for Posters</h2>
+    <p style="margin-bottom: 1.5rem;">
+      The VISMAC 2026 International Summer School aims to provide a stimulating opportunity for Ph.D. students and young researchers. Participants will have the chance to present the results of their research, interact with their scientific peers, and engage with computer vision experts in a friendly and constructive environment.
+    </p>
+    <p style="margin-bottom: 1.5rem;">
+      All accepted and registered students as well as sponsors are highly encouraged to submit a poster to present their research activity. Suitable space will be reserved at the Santa Chiara Lab (University of Siena) for displaying the posters during dedicated sessions.
+    </p>
+    <p style="margin-bottom: 2.5rem;">
+      The electronic version of the posters will also be made available on the VISMAC website.
+    </p>
+
+    <h2>Topics of Interest</h2>
+    <p style="margin-bottom: 1rem;">Topics of interest include, but are not limited to:</p>
+    
+    <!-- Riutilizziamo la struttura grafica dei topic già presente in style.css -->
+    <div class="topic-list" style="margin-bottom: 2.5rem;">
+      <div class="topic-item">Image and video understanding</div>
+      <div class="topic-item">3D computer vision</div>
+      <div class="topic-item">Generative computer vision</div>
+      <div class="topic-item">Action recognition and egocentric vision</div>
+      <div class="topic-item">Embodied-AI and robotics</div>
+      <div class="topic-item">Continual learning</div>
+      <div class="topic-item">Image forensics</div>
+      <div class="topic-item">Computer vision applications and systems</div>
+    </div>
+
+    <h2>Poster Guidelines</h2>
+    <p style="margin-bottom: 1.5rem;">
+      The poster should be submitted in a printable <strong>PDF format</strong>. For your poster, a board will be provided which measures <strong>1000mm tall by 700mm wide</strong>. You are required to <strong>print and bring the poster with you</strong> to the school. Push tacks or velcro adhesive will be provided by the local arrangements team to mount your poster to the board.
+    </p>
+
+    <div style="background-color: #fce5cd; border-left: 5px solid #d9ead3; padding: 20px; border-radius: 5px; margin-bottom: 2.5rem;">
+      <h3 style="margin-top: 0; color: #333;">Submission Deadline</h3>
+      <p style="margin: 0; color: #555;">Please submit your poster by <strong>14 September 2026</strong> by sending it to the following email: <a href="mailto:vismac2026@gmail.com" style="color: #0056b3; font-weight: bold;">vismac2026@gmail.com</a>.</p>
+    </div>
+
+    <h2>Submission Rules</h2>
+    <p style="margin-bottom: 1rem;">Submissions not satisfying the following guidelines may be rejected:</p>
+    <ul style="margin-bottom: 2.5rem; margin-left: 20px; line-height: 1.6;">
+      <li>Title and author list clearly visible;</li>
+      <li>Poster size: <strong>max 1000mm tall x 700mm wide</strong> (Portrait orientation).</li>
+    </ul>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 30px 0;">
+
+    <p style="margin-bottom: 1rem;">
+      For more information or inquiries regarding the poster session, please contact: <a href="mailto:vismac2026@gmail.com" style="color: #0056b3; font-weight: bold;">vismac2026@gmail.com</a>
+    </p>
+    
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 VISMAC • Tutti i diritti riservati</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
